@@ -1,0 +1,74 @@
+<!-- This is the default scrollytelling behaviour -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollytelling template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #my-wrapper {
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .flourish-embed {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="my-wrapper">
+
+    <!-- 1. Drop in the normal embed code for the Flourish story -->
+    <div class="flourish-embed" data-src="story/2445358">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+
+    <!-- 2. Add your captions with links to the relevant slides -->
+    <p><a href="#story/2445358/slide-1">Immobilier: les prix en Belgique</a></p>
+    <p><a href="#story/2445358/slide-2">Les communes où les maisons sont les plus chères sont en Flandre</a></p>
+    <p><a href="#story/2445358/slide-3">Les moins chères sont en Wallonnie.</a></p>
+    <p><a href="#story/2445358/slide-4">Les logements les plus abordables sont le long de la frontière française.</a></p>
+    <p><a href="#story/2445358/slide-5">Et les logements les plus onéreux à Bruxelles.</a></p>
+    <p><a href="#story/2445358/slide-6">Une division nette existe néanmoins entre le nord-ouest et le sud-est de la capitale.</a></p>
+    <p><a href="#story/2445358/slide-7">En Wallonie, les logements les plus chers sont dans le Brabant wallon.</a></p>
+    <p><a href="#story/2445358/slide-7">Les données sont indisponibles pour de nombreuses communes en raison du trop faible nombre de ventes.</a></p>
+    <p><a href="#story/2445358/slide-8">En Flandre, le Brabant flamand est la province la plus chère.</a></p>
+    <p><a href="#story/2445358/slide-9">Même si Knokke-Heist est la commune la plus chère pour les maisons.</a></p>
+    <p><a href="#story/2445358/slide-10">Et pour les appartements.</a></p>
+
+  </div>
+
+  <!-- 3. Add and initialize our scrolly library -->
+  <script src="https://cdn.flourish.rocks/flourish-scrolly-v3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    initFlourishScrolly();
+  </script>
+
+</body>
+</html>
